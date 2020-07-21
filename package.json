@@ -1,0 +1,8 @@
+{
+  "name": "Plains-Cree",
+  "version": "0.1.0",
+  "type": "module",
+  "devDependencies": {
+    "@digitallinguistics/transliterate": "^0.2.1"
+  }
+}
