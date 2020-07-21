@@ -1,6 +1,6 @@
 # Plains Cree
 
-Currently, this repository only contains the transliteration schema for converting Plans Cree text from the Standard Roman Orthography (SRO) to Cree Syllabics.
+Currently, this repository only contains the transliteration schema for converting Plains Cree text from the Standard Roman Orthography (SRO) to Cree Syllabics.
 
 * The transliteration rules are located in the file `SRO-Syllabary.json`, and are designed to be used with the [digitallinguistics/transliterate][transliterate] library, which runs in JavaScript / Node.
 
