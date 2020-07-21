@@ -1,5 +1,11 @@
 # Plains Cree
 
+Currently, this repository only contains the transliteration schema for converting Plans Cree text from the Standard Roman Orthography (SRO) to Cree Syllabics.
+
+* The transliteration rules are located in the file `SRO-Syllabary.json`, and are designed to be used with the [digitallinguistics/transliterate][transliterate] library, which runs in JavaScript / Node.
+
+* You can run the test for the transliteration schema by first installing the [digitallinguistics/transliterate][transliterate] library (`npm install @digitallinguistics/transliterate`) and then running the file `test.js` in Node (`node test.js`), both from the command line in this folder.
+
 ## Syllabary
 
 Consonant | i | î | ê | o | ô | a | â | Final
@@ -26,3 +32,5 @@ SRO | Syllabary
  r  |     ᕒ
  .  |     ᙮
  w  |     ᐧ
+
+[transliterate]: https://developer.digitallinguistics.io/transliterate/
