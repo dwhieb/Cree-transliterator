@@ -10,7 +10,7 @@ Currently, this repository only contains the transliteration schema for converti
 
 Consonant | i | î | ê | o | ô | a | â | Final
 :--------:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:----:
-    N/A   | ᐃ | ᐄ | ᐁ | ᐅ | ᐆ | ᐊ | ᐋ |
+   N/A    | ᐃ | ᐄ | ᐁ | ᐅ | ᐆ | ᐊ | ᐋ | N/A
     w     | ᐏ | ᐑ | ᐍ | ᐓ | ᐕ | ᐘ | ᐚ |   ᐤ
     p     | ᐱ | ᐲ | ᐯ | ᐳ | ᐴ | ᐸ | ᐹ |   ᑊ
     t     | ᑎ | ᑏ | ᑌ | ᑐ | ᑑ | ᑕ | ᑖ |   ᐟ
