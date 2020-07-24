@@ -19,7 +19,7 @@ c         | ᒋ | ᒌ | ᒉ | ᒍ | ᒎ | ᒐ | ᒑ | ᐨ
 m         | ᒥ | ᒦ | ᒣ | ᒧ | ᒨ | ᒪ | ᒫ | ᒼ
 n         | ᓂ | ᓃ | ᓀ | ᓄ | ᓅ | ᓇ | ᓈ | ᐣ
 s         | ᓯ | ᓰ | ᓭ | ᓱ | ᓲ | ᓴ | ᓵ | ᐢ
-y         | ᔨ | ᔩ | ᔦ | ᔪ | ᔫ | ᔭ | ᔮ | ᐩ (ᐝ)
+y         | ᔨ | ᔩ | ᔦ | ᔪ | ᔫ | ᔭ | ᔮ | ᐩ<sup><a href=#fn-1>1</a></sup> (ᐝ)
 th        | ᖨ | ᖩ | ᖧ | ᖪ | ᖫ | ᖬ | ᖭ | ᙾ
 h         |   |   |   |   |   |   |   | ᐦ
 hk        |   |   |   |   |   |   |   | ᕽ
@@ -34,4 +34,9 @@ SRO | Syllabary
  w  |     ᐧ
  \- |  U+202F
 
+## Notes
+
+1. <p id=fn-1>Cree writers overwhelmingly prefer using this character, U+1429 CANADIAN SYLLABICS FINAL PLUS ⟨ᐩ⟩, to U+1540 CANADIAN SYLLABICS WEST-CREE Y ⟨ᕀ⟩.</p>
+
+<!-- LINKS -->
 [transliterate]: https://developer.digitallinguistics.io/transliterate/
