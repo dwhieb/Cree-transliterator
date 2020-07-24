@@ -32,6 +32,6 @@ SRO | Syllabary
  r  |     ᕒ
  .  |     ᙮
  w  |     ᐧ
- -  |  U+202F
+ \- |  U+202F
 
 [transliterate]: https://developer.digitallinguistics.io/transliterate/
