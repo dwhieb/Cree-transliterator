@@ -9,6 +9,8 @@ const SRO = `kâ-mâci-pîkiskwâtikot ôhi oskâya ê-nêhiyawêyit. mâka nam�
 
 const syllabics = `ᑳᒫᒋᐲᑭᐢᒁᑎᑯᐟ ᐆᐦᐃ ᐅᐢᑳᔭ ᐁᓀᐦᐃᔭᐍᔨᐟ᙮ ᒫᑲ ᓇᒨᔭ ᓂᓯᑐᐦᑕᐍᐤ ᐊᐘ ᐅᐢᑭᓂᑮᐢ ᑖᓂᓯ ᐁᐃᑘᔨᐟ ᐋᑕ ᐑᐢᑕ ᐁᓀᐦᐃᔭᐍᐟ᙮`;
 
+console.log(`Testing SRO > syllabics`);
+
 const result = transliterate(SRO, substitutions);
 
 console.log(`Input:\t${SRO}`);
@@ -17,7 +19,7 @@ console.log(`Target:\t${syllabics}`);
 
 if (result === syllabics) {
 
-  console.info(`Test passed!`);
+  console.info(`SRO > syllabics test passed!`);
 
 } else {
 
