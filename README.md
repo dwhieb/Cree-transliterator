@@ -34,6 +34,10 @@ SRO | Syllabary
  w  |     ᐧ
  \- |  U+202F
 
+## Keyboards
+
+* http://www.languagegeek.com/algon/syllabics_keyboards/cr_oj_oc_na.html
+
 ## Notes
 
 1. <p id=fn-1>Cree writers overwhelmingly prefer using this character, U+1429 CANADIAN SYLLABICS FINAL PLUS ⟨ᐩ⟩, to U+1540 CANADIAN SYLLABICS WEST-CREE Y ⟨ᕀ⟩.</p>
