@@ -1,0 +1,50 @@
+name: release
+
+on:
+  release:
+    [created]
+
+jobs:
+
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo
+        uses: actions/checkout@v2
+
+      - name: set up Node for npm
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key:  ${{ hashFiles('**/package-lock.json') }}
+
+      - name: install dependencies
+        if:   steps.cache.outputs.cache-hit != 'true'
+        run:  npm ci
+
+      - name: run tests
+        run:  npm test
+
+      - name: publish to npm
+        run:  npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: set up Node for GitHub Package Registry
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope:        '@digitallinguistics'
+
+      - name: publish to GitHub Package Registry
+        run:  npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

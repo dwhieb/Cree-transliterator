@@ -1,23 +1,20 @@
-import { transliterate } from '@digitallinguistics/transliterate';
-import { createRequire } from 'module';
+import sro2syllabics from './sro2syllabics.js';
+import syllabics2sro from './syllabics2sro.js';
 
-const require = createRequire(import.meta.url);
-
-const SRO       = `kâ-mâci-pîkiskwâtikot ôhi oskâya ê-nêhiyawêyit. mâka namôya nisitohtawêw awa oskinikîs tânisi ê-itwêyit âta wîsta ê-nêhiyawêt.`;
+const sro       = `kâ-mâci-pîkiskwâtikot ôhi oskâya ê-nêhiyawêyit. mâka namôya nisitohtawêw awa oskinikîs tânisi ê-itwêyit âta wîsta ê-nêhiyawêt.`;
 const syllabics = `ᑳ ᒫᒋ ᐲᑭᐢᒁᑎᑯᐟ ᐆᐦᐃ ᐅᐢᑳᔭ ᐁ ᓀᐦᐃᔭᐍᔨᐟ᙮ ᒫᑲ ᓇᒨᔭ ᓂᓯᑐᐦᑕᐍᐤ ᐊᐘ ᐅᐢᑭᓂᑮᐢ ᑖᓂᓯ ᐁ ᐃᑘᔨᐟ ᐋᑕ ᐑᐢᑕ ᐁ ᓀᐦᐃᔭᐍᐟ᙮`;
 
-console.log(`\nTesting SRO > syllabics`);
+console.info(`\nTesting SRO > Syllabics`);
 
-const SRO2syllabics       = require(`./SRO2syllabics.json`);
-const SRO2SyllabicsResult = transliterate(SRO, SRO2syllabics);
+const sro2syllabicsResult = sro2syllabics(sro);
 
-console.log(`\nInput:\t${SRO}`);
-console.log(`Result:\t${SRO2SyllabicsResult}`);
-console.log(`Target:\t${syllabics}`);
+console.info(`\nInput:\t${sro}`);
+console.info(`Result:\t${sro2syllabicsResult}`);
+console.info(`Target:\t${syllabics}`);
 
-if (SRO2SyllabicsResult === syllabics) {
+if (sro2syllabicsResult === syllabics) {
 
-  console.info(`\nSRO > syllabics test passed!`);
+  console.info(`\nSRO > Syllabics test passed!`);
 
 } else {
 
@@ -25,9 +22,9 @@ if (SRO2SyllabicsResult === syllabics) {
 
   [...syllabics].forEach((letter, i) => {
 
-    if (syllabics[i] !== SRO2SyllabicsResult[i]) {
+    if (syllabics[i] !== sro2syllabicsResult[i]) {
 
-      throw new Error(`\nMisalignment starts at: ${SRO2SyllabicsResult.slice(i)}`);
+      throw new Error(`\nMisalignment starts at: ${sro2syllabicsResult.slice(i)}`);
 
     }
 
@@ -35,28 +32,27 @@ if (SRO2SyllabicsResult === syllabics) {
 
 }
 
-console.log(`\nTesting syllabics > SRO`);
+console.info(`\nTesting Syllabics > SRO`);
 
-const syllabics2SRO       = require(`./syllabics2SRO.json`);
-const syllabics2SROResult = transliterate(syllabics, syllabics2SRO);
+const syllabics2sroResult = syllabics2sro(syllabics);
 
-console.log(`\nInput:\t${syllabics}`);
-console.log(`Result:\t${syllabics2SROResult}`);
-console.log(`Target:\t${SRO}`);
+console.info(`\nInput:\t${syllabics}`);
+console.info(`Result:\t${syllabics2sroResult}`);
+console.info(`Target:\t${sro}`);
 
-if (syllabics2SROResult === SRO) {
+if (syllabics2sroResult === sro) {
 
-  console.info(`\nsyllabics > SRO test passed!`);
+  console.info(`\nSyllabics > SRO test passed!`);
 
 } else {
 
   console.error(`\nTest failed!`);
 
-  [...SRO].forEach((letter, i) => {
+  [...sro].forEach((letter, i) => {
 
-    if (SRO[i] !== syllabics2SROResult[i]) {
+    if (sro[i] !== syllabics2sroResult[i]) {
 
-      throw new Error(`\nMisalignment starts at: ${syllabics2SROResult.slice(i)}`);
+      throw new Error(`\nMisalignment starts at: ${syllabics2sroResult.slice(i)}`);
 
     }
 

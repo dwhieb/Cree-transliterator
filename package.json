@@ -1,11 +1,39 @@
 {
-  "name": "Plains-Cree",
+  "name": "@dwhieb/cree-transliterator",
   "version": "0.1.0",
-  "type": "module",
-  "devDependencies": {
-    "@digitallinguistics/transliterate": "^0.2.1"
+  "description": "A JavaScript library for transliterating between Cree writing systems",
+  "keywords": [
+    "Cree",
+    "transliteration",
+    "linguistics",
+    "language",
+    "writing",
+    "writing systems",
+    "syllabary"
+  ],
+  "author": {
+    "name": "Daniel W. Hieber",
+    "url": "https://danielhieber.com"
   },
+  "homepage": "https://github.com/dwhieb/Cree-transliterator",
+  "bugs": "https://github.com/dwhieb/Cree-transliterator/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwhieb/Cree-transliterator.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0"
+  },
+  "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "node test.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0"
+  },
+  "dependencies": {
+    "@digitallinguistics/transliterate": "^0.2.2"
   }
 }
