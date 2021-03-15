@@ -5,7 +5,7 @@ import { transliterate } from '@digitallinguistics/transliterate';
 
 const currentDir    = path.dirname(fileURLToPath(import.meta.url));
 const schemaPath    = path.join(currentDir, `SRO2Syllabics.json`);
-const json          = readFileSync(schemaPath);
+const json          = readFileSync(schemaPath, `utf8`);
 const substitutions = JSON.parse(json);
 
 const sroNormalizations = {
