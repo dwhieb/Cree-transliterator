@@ -4,7 +4,7 @@ import { readFileSync }  from 'fs';
 import { transliterate } from '@digitallinguistics/transliterate';
 
 const currentDir    = path.dirname(fileURLToPath(import.meta.url));
-const schemaPath    = path.join(currentDir, `./SRO2Syllabics.json`);
+const schemaPath    = path.join(currentDir, `SRO2Syllabics.json`);
 const json          = readFileSync(schemaPath);
 const substitutions = JSON.parse(json);
 
