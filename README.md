@@ -1,10 +1,10 @@
-# Plains Cree
+# Plains Cree Transliteration
 
-Currently, this repository only contains the transliteration schema for converting Plains Cree text from the Standard Roman Orthography (SRO) to Cree Syllabics.
+This repository contains the transliteration schema for converting Plains Cree text from the Standard Roman Orthography (SRO) to Cree Syllabics.
 
 * The transliteration rules are located in the file `SRO-Syllabary.json`, and are designed to be used with the [digitallinguistics/transliterate][transliterate] library, which runs in JavaScript / Node.
 
-* You can run the test for the transliteration schema by first installing the [digitallinguistics/transliterate][transliterate] library (`npm install @digitallinguistics/transliterate`) and then running the file `test.js` in Node (`node test.js`), both from the command line in this folder.
+* You can run the test for the transliteration schema by first installing the [digitallinguistics/transliterate][transliterate] library (`npm install @digitallinguistics/transliterate`) and then running the file `test.js` in this repo with Node (`node test.js`).
 
 ## Syllabary
 
