@@ -1,6 +1,6 @@
 {
   "name": "@dwhieb/cree-transliterator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A JavaScript library for transliterating between Cree writing systems",
   "keywords": [
     "Cree",
