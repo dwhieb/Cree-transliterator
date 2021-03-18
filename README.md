@@ -2,6 +2,8 @@
 
 A JavaScript library for transliterating between Cree language writing systems.
 
+**NOTE:** A more robust Cree transliterator, which handles morphophonology and provides options for other writing conventions, is the [eddieantonio/cree-sro-syllabics](https://github.com/eddieantonio/cree-sro-syllabics.js#readme) library.
+
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/dwhieb/Cree-transliterator)][releases]
 [![tests status](https://github.com/dwhieb/Cree-transliterator/actions/workflows/test.yml/badge.svg?branch=main)][status]
 [![GitHub issues](https://img.shields.io/github/issues/dwhieb/Cree-transliterator)][issues]
@@ -64,6 +66,29 @@ SRO | Syllabary
  .  |     ᙮
  w  |     ᐧ
  \- |  U+202F
+
+## SRO Varieties
+
+Western<br>Swampy | Southern<br>Plains | Northern<br>Plains | Woods<br>SRO | Woods<br>CMRO
+:-------------:|:---------------:|:---------------:|:---------:|:---------:
+a              | a               | a               | a         | u
+â              | â               | â               | â         | a
+c              | c               | c               | c         | ch
+ê              | ê               | (î)             | (î)       | (e)
+h              | h               | h               | h         | h
+i              | i               | i               | i         | i
+î              | î               | î               | î         | e
+k              | k               | k               | k         | k
+m              | m               | m               | m         | m
+n              | n               | n               | n         | n
+o              | o               | o               | o         | o
+ô              | ô               | ô               | ô         | oo
+p              | p               | p               | p         | p
+s              | s               | s               | s         | s
+t              | t               | t               | t         | t
+w              | w               | w               | w         | w
+y              | y               | y               | y         | y
+ń              | ý               | ý               | th        | th
 
 ## Keyboards
 
