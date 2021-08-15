@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: Please cite this software as follows.
+authors:
+- family-names: Hieber
+  given-names:  Daniel W.
+  orcid:        https://orcid.org/0000-0002-1411-3773
+title:         Cree transliterator
+version:       0.1.1
+doi:           https://github.com/dwhieb/Cree-transliterator
+date-released: '2021-03-14'
+url:           https://github.com/dwhieb/Cree-transliterator
+license:       MIT
